@@ -218,7 +218,7 @@ class NetWork(object):
         correct_num = np.sum((out_max_index == np.argmax(test_target, axis=0)) == 1)
         print('correct num：{0}\n'.format(correct_num))
         print('wrong num：{0}\n' .format(total_num - correct_num))
-        print('recogniton rate：{0}\n' .format(correct_num/total_num))
+        print('recognition rate：{0}\n' .format(correct_num/total_num))
 
     def relu(self, x):
         return np.where(x>0, x, 0)
